@@ -1,1 +1,27 @@
+
+#Never show on git!!
 provider.tf
+# Terraform .terraform directories
+**/.terraform/
+
+# Terraform .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files, which can contain sensitive data
+crash.log
+
+# Exclude .terraformrc, terraform.rc, terraform-override files
+terraform.rc
+terraform.tfvars
+
+# Ignore any .tfvars files that are intended to be kept secret
+*.secret.tfvars
+
+# Ignore override files as they are usually used to override non-public settings
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Include your own .gitignore rules below to exclude other project-specific files
